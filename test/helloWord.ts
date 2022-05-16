@@ -1,12 +1,13 @@
-import "@nomiclabs/hardhat-ethers"
-import { ethers } from "hardhat"
-import { expect } from "chai"
+import _ from "@nomiclabs/hardhat-ethers";
 
-describe('HelloWorld', function() {
+import { ethers } from "hardhat";
+import { expect } from "chai";
 
-    it("should say hello", async  function(){
-    const HelloWorld= await ethers.getContractFactory("HelloWorld");
-    const Hello=await HelloWorld.deploy();
-    await Hello.deployed();
+describe("Hello World", () => {
+    it("should get the hello world", async () => {
+        const HW = await ethers.getContractFactory("HelloWorld");
+        const hello = await HW.deploy();
+
+        expect(await hello.hello()).to.equal("Hello, World Isaac");
     });
 });

@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/helloWorld.sol": {
-      "lastModificationDate": 1652703140163,
-      "contentHash": "cbe50fa25cc13a5ff76686662349d52a",
-      "sourceName": "contracts/helloWorld.sol",
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/HelloWorld.sol": {
+      "lastModificationDate": 1652706758390,
+      "contentHash": "2acb07d1fe12b06102568951c4692eed",
+      "sourceName": "contracts/HelloWorld.sol",
       "solcConfig": {
         "version": "0.8.10",
         "settings": {
