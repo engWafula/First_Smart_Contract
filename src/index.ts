@@ -23,13 +23,13 @@ async function getContract() {
     // @ts-ignore
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const contract = new ethers.Contract(
-        address,
+        "0x5fbdb2315678afecb367f032d93f642f64180aa3",
         [
             "function hello() public pure returns(string memory)",
         ], // abi
         provider
     );
-
+   document.body.innerHTML = await contract.hello();
     console.log("We have done it, time to call");
     console.log(await contract.hello());
 }
