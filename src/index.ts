@@ -1,4 +1,6 @@
-import { ethers } from "ethers";
+
+import {  ethers } from "ethers";
+import Counter from "../artifacts/contracts/Counter.sol/Counter.json";
 
 async function hasSigners(): Promise<boolean> {
     //@ts-ignore
@@ -21,18 +23,40 @@ async function getContract() {
     }
 
     // @ts-ignore
-    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const provider = new ethers.providers.Web3Provider(window.ethereum).getSigner()
     const contract = new ethers.Contract(
-        "0x5fbdb2315678afecb367f032d93f642f64180aa3",
-        [
-            "function hello() public pure returns(string memory)",
-        ], // abi
+        address,
+        Counter.abi,
         provider
     );
-   document.body.innerHTML = await contract.hello();
-    console.log("We have done it, time to call");
-    console.log(await contract.hello());
+    const el =document.createElement("div");
+    async function setCounter(count) {
+        el.innerHTML =count || await contract.getCount();
+    }
+    
+
+
+    const button = document.createElement("button");
+      button.innerHTML = "Increment";
+      button.onclick = async function(){
+       const tx =   await contract.count()
+
+
+       //this is too hectic to do in a browser
+    //    await tx.wait();
+    //       setCounter()
+      }
+      contract.on(contract.filters.counterInc(),function(count){
+        setCounter(count);
+     })
+     
+      document.body.appendChild(el);
+      document.body.appendChild(button);
+//    document.body.innerHTML = await contract.hello();
+//     console.log("We have done it, time to call");
+//     console.log(await contract.hello());
 }
+
 
 
 getContract();

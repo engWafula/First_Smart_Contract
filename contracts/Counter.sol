@@ -5,10 +5,15 @@ import "hardhat/console.sol";
 
 contract Counter {
     uint counter;
+    event counterInc(uint counter);
 
-    function count() public returns (uint) {
-        counter++;
+    function count() public {
+        counter=counter+10;
         console.log("Counter is now  " ,counter);
-        return counter;
+        emit counterInc(counter);
+    }
+
+    function getCount() public view returns (uint32) {
+        return uint32(counter);
     }
 }

@@ -72,8 +72,8 @@
       ]
     },
     "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/Counter.sol": {
-      "lastModificationDate": 1652799450751,
-      "contentHash": "f0dbe11d263176994a2af3a35f7d661e",
+      "lastModificationDate": 1652866328512,
+      "contentHash": "049a1ddfd6734fdf01c435bd8e9e25e1",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -106,6 +106,43 @@
       ],
       "artifacts": [
         "Counter"
+      ]
+    },
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/TestGas.sol": {
+      "lastModificationDate": 1652870249787,
+      "contentHash": "c306d9c525d613182b1550d777db1ce1",
+      "sourceName": "contracts/TestGas.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestGas"
       ]
     }
   }
