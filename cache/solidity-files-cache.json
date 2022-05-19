@@ -144,6 +144,41 @@
       "artifacts": [
         "TestGas"
       ]
+    },
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/Hero.sol": {
+      "lastModificationDate": 1652954542165,
+      "contentHash": "c6fe2908083e6f3777f4edf20508e374",
+      "sourceName": "contracts/Hero.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hero"
+      ]
     }
   }
 }
