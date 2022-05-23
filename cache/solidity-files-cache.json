@@ -256,8 +256,8 @@
       ]
     },
     "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/A.sol": {
-      "lastModificationDate": 1653297379013,
-      "contentHash": "f86c88dc5dca78d0ccc0f6e8401dd817",
+      "lastModificationDate": 1653301274219,
+      "contentHash": "cc3d5d7d95ac7e05931ca2601669786c",
       "sourceName": "contracts/A.sol",
       "solcConfig": {
         "version": "0.8.10",
