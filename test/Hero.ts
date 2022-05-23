@@ -40,5 +40,6 @@ describe("Hero", () => {
         const h=(await hero.getHeros())[0];
         console.log(h)
         expect(await hero.getMagic(h)).to.equal(10);
+        // expect(await hero.getHealth(h)).to.equal(2);
 
     })});

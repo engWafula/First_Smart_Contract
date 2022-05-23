@@ -216,6 +216,82 @@
       "artifacts": [
         "TestHero"
       ]
+    },
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/Fallback.sol": {
+      "lastModificationDate": 1653295863794,
+      "contentHash": "8538783ef5b5a393a98b6b3bb85531d7",
+      "sourceName": "contracts/Fallback.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Fallback",
+        "IFallback"
+      ]
+    },
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/A.sol": {
+      "lastModificationDate": 1653297379013,
+      "contentHash": "f86c88dc5dca78d0ccc0f6e8401dd817",
+      "sourceName": "contracts/A.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "A",
+        "B"
+      ]
     }
   }
 }
