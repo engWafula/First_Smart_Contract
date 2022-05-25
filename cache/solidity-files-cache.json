@@ -256,8 +256,8 @@
       ]
     },
     "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/A.sol": {
-      "lastModificationDate": 1653301274219,
-      "contentHash": "cc3d5d7d95ac7e05931ca2601669786c",
+      "lastModificationDate": 1653471846253,
+      "contentHash": "c3fbef121d15c731f9979321e15084f1",
       "sourceName": "contracts/A.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -283,7 +283,8 @@
         }
       },
       "imports": [
-        "hardhat/console.sol"
+        "hardhat/console.sol",
+        "./Storage.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
@@ -292,6 +293,39 @@
         "A",
         "B"
       ]
+    },
+    "/home/wafula/Downloads/Desktop/Smart_Contracts/contracts/Storage.sol": {
+      "lastModificationDate": 1653471789024,
+      "contentHash": "cb8270bc67fac6c3a059cbbd5cd1125f",
+      "sourceName": "contracts/Storage.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
     }
   }
 }
